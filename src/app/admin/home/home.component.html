@@ -1,0 +1,23 @@
+<!-- <p>home works!</p> -->
+<!-- <p>items works!</p> -->
+<!-- <p>items works!</p> -->
+<div >
+    <button (click)="onAll()">All</button>
+    <button (click)="onS()">Soups</button>
+    <button (click)="onB()">Breads, cereals, fastfood,grains</button>
+    <button (click)="onD()">Dairy products</button>
+    <button (click)="onF()">Fats, Oils, Shortenings</button>
+    <button (click)="onM()">Meat, Poultry</button>
+    <button (click)="onSeafood()">Fish, Seafood</button>
+    <button (click)="onV()">Vegetables</button>
+    <button (click)="onFruits()">Fruits</button>
+    <button (click)="onDesserts()">Desserts, sweets</button>
+    <button (click)="onJ()">Jams, Jellies</button>
+    <button (click)="onSeeds()">Seeds and Nuts</button>
+    <button (click)="onA()">Drinks,Alcohol, Beverages</button>
+    </div>
+    <!-- <p>{{x.Food}}</p> -->
+    <div class="cont">
+    <app-itemscard  *ngFor ='let x of names|apipe:cat' [pd]="x"></app-itemscard>
+    </div>
+

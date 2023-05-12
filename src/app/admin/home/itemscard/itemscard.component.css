@@ -1,0 +1,14 @@
+/* .example-header-image {
+    background-size: cover;
+    height: 50px;
+    width:50px;
+  } */
+  .example-card {
+    width: 300px;
+    margin: .5rem;
+    color:brown;
+    background-color: bisque;
+}
+.image{
+  height:200px;
+}

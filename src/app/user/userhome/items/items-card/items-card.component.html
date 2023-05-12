@@ -1,0 +1,16 @@
+<!-- <p>items-card works!</p> -->
+<!-- <p>items-card works!</p> -->
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{pd.Category}}</mat-card-title>
+      <mat-card-subtitle>{{pd.Food}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class='image'src="http://localhost/{{pd.image}}" alt="business">
+    <mat-card-content>
+    </mat-card-content>
+    <mat-card-actions>
+      <a (click)="changeRoute()">Details</a>
+      <!-- <button mat-button>Details</button> -->
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,39 @@
+header{
+    padding:0;
+    padding-right: 3rem;
+    background:pink;
+    border-bottom:1px solid red ;
+}
+a{
+    color:red;
+    
+}
+a:hover{
+    background-color: red;
+    color:white;
+}
+.container{
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+a.logo{
+    font-weight:bold;
+    padding:1em;
+}
+nav ul{
+    list-style-type: none;
+    margin:0;
+}
+nav ul li a{
+    padding:1em;
+    display:inline-block;
+}
+li{
+    list-style-type: none;
+}
+.nv{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}

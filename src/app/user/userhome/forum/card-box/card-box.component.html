@@ -7,6 +7,11 @@
     </mat-card-header>
     <mat-card-content>
       <p>{{pd.comment}}</p>
+      <!-- <p>{{pd.reply}}</p> -->
+      <div class="rplybox" *ngFor="let x of pd.reply">
+        <p>Admin  Replied that "{{x.comment}}"</p>
+      </div>
     </mat-card-content>
 </mat-card>
 <br>
+<!-- <app-cardboxc *ngFor="'let x of names"[pd]="x"></app-cardboxc> -->

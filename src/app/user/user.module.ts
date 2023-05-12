@@ -19,6 +19,8 @@ import { ComplaintsComponent } from './userhome/complaints/complaints.component'
 import { CardBoxComponent } from './userhome/forum/card-box/card-box.component';
 import { CreateDietplanComponent } from './userhome/create-dietplan/create-dietplan.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardboxcComponent } from './userhome/forum/card-box/cardboxc/cardboxc.component';
+
 
 const route:Routes=[
   
@@ -75,7 +77,8 @@ const route:Routes=[
     ComplaintsComponent,
     CardBoxComponent,
    
-    CreateDietplanComponent
+    CreateDietplanComponent,
+    CardboxcComponent
   ],
   imports: [
     CommonModule,

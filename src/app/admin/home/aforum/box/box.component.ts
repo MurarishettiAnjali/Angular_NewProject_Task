@@ -9,6 +9,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class BoxComponent {
   @Input() pd:any;
+  rl:any[]=[];
   // reply() {
   //   // Add your reply logic here
   //   console.log('Reply button clicked');
@@ -28,23 +29,14 @@ export class BoxComponent {
   }
   submitReply() {
     let un = sessionStorage.getItem("username");
-    // this.us.getUsers().subscribe({
-    //   next:(data:any)=>{
-    //     for(let x of data){
-    //       if(x.username == un){
 
-    //       }
-    //     }
-    //   },
-    //   error:()=>{}
-    // })
-    let rl = this.pd.reply;
+    this.rl = this.pd.reply;
     let obj = {
       "usernmae":un,
       "comment": this.replyText
     }
-    rl.push(obj)
-    this.us.updateForum({"reply":rl},this.pd.id).subscribe({
+    this.rl.push(obj)
+    this.us.updateForum({"reply":this.rl},this.pd.id).subscribe({
       next:()=>{alert("reply successful")},
       error:()=>{alert("reply failed")}
     })

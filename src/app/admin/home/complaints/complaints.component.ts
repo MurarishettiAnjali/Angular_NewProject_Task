@@ -8,8 +8,8 @@ import { ComplaintsService } from 'src/app/services/complaints.service';
 })
 export class ComplaintsComponent {
   names:any;
-  constructor(is:ComplaintsService){
-    is.getcomplaints().subscribe(
+  constructor(cs:ComplaintsService){
+    cs.getcomplaints().subscribe(
       {
         next:(data:any)=>this.names=data,
         error:()=>this.names=[]

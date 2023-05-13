@@ -1,5 +1,10 @@
 <!-- <p>dietplanform works!</p> -->
+<div class="wrapper">
 <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div class="title">
+    ADD PRODUCT
+  </div>
+  <div class="form">
     <div class="form-group margin-t10">
         <label>Food</label>
         <input type="text" name="Food" class="form-control" [(ngModel)]="model.Food" #Food="ngModel" required>
@@ -61,5 +66,8 @@
     <div class="form-group margin-t10">
         <button class="btn btn-danger btn-block" [disabled]="!userForm.form.valid">Submit</button>
     </div>
+
+  </div>
     
   </form>
+</div>
